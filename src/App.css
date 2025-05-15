@@ -2,37 +2,65 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
+  background-color: #1a1e3b;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 1vmin);
   color: white;
+  padding: 20px;
 }
 
-.App-link {
+h1 {
+  margin-bottom: 30px;
   color: #61dafb;
+  font-size: 2.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.clocks-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+}
+
+.clock {
+  background-color: #3a3f4b;
+  border-radius: 10px;
+  padding: 20px;
+  min-width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.clock:hover {
+  transform: translateY(-5px);
+}
+
+.clock h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #61dafb;
+  font-size: 1.5rem;
+}
+
+.time {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  font-family: 'Courier New', monospace;
+}
+
+@media (max-width: 768px) {
+  .clocks-container {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .clock {
+    width: 80%;
   }
 }
