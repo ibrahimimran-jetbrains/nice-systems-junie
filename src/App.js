@@ -36,7 +36,8 @@ function App() {
     { timezone: 'Europe/London', label: 'London' },
     { timezone: 'Asia/Tokyo', label: 'Tokyo' },
     { timezone: 'Australia/Sydney', label: 'Sydney' },
-    { timezone: 'Asia/Dubai', label: 'Dubai' }
+    { timezone: 'Asia/Dubai', label: 'Dubai' },
+    { timezone: 'Asia/Amman', label: 'Jordan' }
   ];
 
   return (
